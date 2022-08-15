@@ -42,7 +42,7 @@ export default function ImageFormModal(props) {
         <Stack direction="row" alignItems="center" spacing={2}>
             <Button variant="contained" component="label">
                 Upload
-                <input hidden onChange={handleCapture} accept="image/*" multiple type="file" />
+                <input hidden onChange={handleCapture} accept=".png, .jpg, .jpeg" multiple type="file" />
             </Button>
             { props.modalData.image?.name && <span> {props.modalData.image.name} </span>}     
         </Stack>
